@@ -1,0 +1,8 @@
+<?php
+    function conecta(){
+        $con=mysqli_connect("localhost", "root","270599","unifast");
+        if (mysqli_connect_errno()){
+            echo "problemas para conectar a la base de datos".mysqli_connect_error();
+        }
+        return $con;
+    }
